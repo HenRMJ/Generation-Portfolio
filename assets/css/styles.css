@@ -1,9 +1,16 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 html {
     font-family: 'Archivo', sans-serif;
 }
 
 body {
     margin: 0 24px;
+    background-image: url("../imgs/background.png");
+    background-size: cover;
+    height: 100vh;
 }
 
 ul {
@@ -13,6 +20,20 @@ ul {
 li {
     margin: 8px 64px 16px 0;
     font-weight: 100;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navlink {
+    transition: .8s;
+}
+
+.navlink:hover {
+    opacity: .54;
+    transition: .3s;
 }
 
 .subnum {
@@ -28,3 +49,61 @@ nav hr {
     margin: 0 -24px 8px;
 }
 
+.subheader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.line {
+    flex-grow: 12;
+    height: 1px;
+    background: white;
+}
+
+h1 {
+    font-size: 96px;
+    font-weight: 900;
+    color: white;
+    width: 413px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 100;
+    color: white;   
+}
+
+.homeitem {
+    margin-top: 1rem;
+    width: 319px;
+    height: 319px;
+}
+
+.homeitem p {
+    font-size: 24px;
+    width: 169px;
+    padding: 24px;
+    opacity: .87;
+}
+
+.cta {
+    width: 319px;
+    height: 88px;
+    background-color: #D030BD;
+    position: relative;
+    left: 113px;
+    bottom: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.cta p {
+    padding: 24px;
+    font-size: 24px;
+}
+
+.white {
+    background-color: white;
+}

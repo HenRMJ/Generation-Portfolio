@@ -13,6 +13,16 @@ body {
     height: 100vh;
 }
 
+.navbar {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(16px);
+    margin: 0 -24px;
+}
+
+nav {
+    margin: 0 24px;
+}
+
 ul {
     display: flex;
 }

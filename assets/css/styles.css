@@ -1,3 +1,7 @@
+* {
+    transition: .5s;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -16,15 +20,17 @@ body {
 .navbar {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(16px);
-    margin: 0 -24px;
+    width: 100vw;
 }
 
 nav {
     margin: 0 24px;
+    transition: .5s;
 }
 
 ul {
     display: flex;
+    transition: .5s;
 }
 
 li {
@@ -57,6 +63,8 @@ a {
 nav hr {
     width: 100vw;
     margin: 0 -24px 8px;
+    opacity: .32;
+    transition: 0;
 }
 
 .subheader {
@@ -81,7 +89,7 @@ h1 {
 h2 {
     font-size: 16px;
     font-weight: 100;
-    color: white;   
+    color: white; 
 }
 
 .homeitem {
@@ -116,4 +124,106 @@ h2 {
 
 .white {
     background-color: white;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0 32px;
+    }
+
+    .navbar {
+        margin: 0 -32px;
+        transition: 0s;
+    }
+
+    nav {
+        margin: 0 32px;
+        transition: 0s;
+    }
+
+    .homeitem {
+        width: 342px;
+        height: 342px;
+    }
+
+    nav hr {
+        margin: 0 -32px 8px;
+        transition: 0s;
+    }
+
+    .cta {
+        left: 204px;
+        bottom: 119px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    li {
+        margin-right: 96px;
+    }
+
+    .homeitem {
+        width: 388px;
+        height: 388px;
+    }
+
+    h1 {
+        font-size: 128px;
+    }
+
+    .homeitem p {
+        font-size: 32px;
+        width: 227px;
+    }
+
+    .cta {
+        width: 388px;
+        height: 102px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        width: 840px;
+    }
+
+    li {
+        margin-right: 125px;
+    }
+
+    header {
+        width: 840px;
+    }
+
+    main {
+        width: 840px;
+    }
+
+    .homeitem {
+        width: 462px;
+        height: 462px;
+    }
+
+    nav hr {
+        width: 100vw;
+    }
+
+    .cta {
+        width: 422px;
+        height: 121px;
+        left: 289px;
+        bottom: 164px;
+    }
 }
